@@ -1,0 +1,32 @@
+button {
+    font: normal 30px arial;
+    color: #222;
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 400ms;
+}
+.btn1:hover {
+    box-shadow: 
+    10px 10px 10px #fff1,
+    -5px -5px 5px #fff3,
+    10px 10px 10px #0001,
+    5px 5px 5px #0001,
+    inset 5px 5px 6px #fff3,
+    inset -5px -5px 6px #0001,
+    inset 2px 2px 4px #fff6,
+    inset -2px -2px 4px #0002;
+}
+.btn2:hover {
+    box-shadow: 
+    inset 5px 5px 6px #fff3,
+    inset -5px -5px 5px #0001,
+    inset 10px 10px 10px #fff6,
+    inset 5px 5px 5px #0002,
+    5px 5px 6px #fff1,
+    -5px -5px 6px #fff3,
+    2px 2px 4px #0001,
+    -2px -2px 4px #0001;
+}

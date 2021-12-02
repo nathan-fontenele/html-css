@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <!--titulo e subtitulo-->
+        <main class=" animate__animated animate__fadeIn">
+            <div class="cabecalho">
+                <h1>Cadastro de DEVs</h1>
+                <p>Complete suas informações</p>
+                <br>
+            </div>
+            <!--campos de input para inserir informações-->
+            <form>
+            
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <input placeholder="Nome*" type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <input placeholder="Sobrenome*" type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                    <div class="campo">
+                        <input placeholder="Email*" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <input placeholder="Senha*" type="password" name="senha" id="senha" required>
+                    </div>
+                </fieldset>
+                <!--lados da aplicação que desenvolve-->
+                <div class="lado">
+                    <p><strong>De qual lado da aplicação você desenvolve?</strong></p>
+                        <label>
+                            <input type="radio" name="devweb" value="frontend">Front-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="backend">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="fullstack">Full-stack
+                        </label>
+                </div>
+                <!--senioridade-->
+                <div class="senioridade">
+                    <label for="senioridade"><strong>Senioridade:</strong></label>
+                    <select id="senioridade">
+                        <option selected disabled value="">Selecione:</option>
+                        <option>Junior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>
+                    </select>
+                </div>
+                <!--tecnologias utilizadas-->
+                <fieldset class="tecnologia">
+                        <p><strong>Selecione as tecnologias que utiliza:</strong></p>
+                        
+                        <div class="tec">
+                            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                            <label for="tecnologia1">HTML</label>
+                            
+                            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                            <label for="tecnologia2">CSS</label>
+                            
+                            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScrit">
+                            <label for="tecnologia3">JavaScript</label>
+                            
+                            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                            <label for="tecnologia4">PHP</label>
+                        </div>
+                            <br>
+                        <div class="tec">
+                            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                            <label for="tecnologia5">C#</label>
+                                
+                            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                            <label for="tecnologia6">Python</label>
+                                
+                            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                            <label for="tecnologia7">Java</label>
+                            
+                            <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Java">
+                            <label for="tecnologia8">React</label>
+                        </div>
+                        
+                </fieldset>
+                <!--campo de feedback sobre a experiência-->
+                <div class="exp">
+                    <br>
+                    <p><strong>Conte um pouco da sua experiência:</strong></p>
+                    <textarea wrap="hard" maxlength="200" rows="6" style="width: 40em;" id="experiencia" name="experiencia"></textarea>
+                </div>
+                <!--cadastro com outras redes sociais-->
+                <div class="redes">
+                    <p><strong>Ou se cadastre-se com outras redes:</strong></p>
+                    <div class="sociais">
+                        <div id="facebook">
+                            <i class="fab fa-facebook"></i>
+                            <a href="#">Cadastre-se com Facebook</a>
+                        </div>
+                        <div id="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="#">Cadastre com Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <!--botão de concluido-->
+                <button class="botao" type="submit">Concluído</button>  
+            </form>
+        </main>
+        <!--rodape-->
+        <footer>
+            <p>Formulário adaptado por Nathan Gomes.</p>
+        </footer>
+    </body>
+</html>

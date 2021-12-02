@@ -1,0 +1,28 @@
+button {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: 2px solid #00ff77;
+  outline: none;
+  font: bold 30px arial, sans-serif;
+  color: #222;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #00ff77;
+    transition: width 400ms;
+}
+button:hover::before {
+    left: 0;
+    width: 100%
+}

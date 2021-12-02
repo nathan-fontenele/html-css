@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,500;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+/*variaveis*/
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo:  'Fira Sans', sans-serif;
+    --fonte-campos: 'Fira Mono', monospace;
+}
+/*configuração global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*corpo da página*/
+body{
+    background-image: linear-gradient(90deg, rgba(96,0,144,1) 0%, rgba(26,129,196,1) 100%);
+
+ }
+/*caixa onde está inserida todos os elementos*/
+main{
+    background-color: white;
+    display: block;
+    margin: 7em auto;
+    max-width: 600px;
+    min-height: 30vh;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(47, 4, 82);
+}
+/*campo de todo o formulário*/
+form{
+    display: flex;
+    flex-direction: column;
+     }
+/*todos os inputs (nome, sobrenome, email e senha)*/
+input{
+    font-family: var(--fonte-campos);
+    font-weight: 400;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0.7em;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+/*animação dos inputs (nome, sobrenome, email e senha)*/
+input:hover, input:focus{
+    background-color: #381A70;
+    color: white;
+    transition: .5s;
+}
+/*retira a borda do fieldset dos inputs*/
+fieldset{
+    border: none;
+}
+/*área de experiência*/
+textarea{
+    width: 46em;
+    margin: 0 auto;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    max-width: 580px;
+    max-height: 60px;
+    min-width: 580px;
+    min-height: 60px;
+    text-align: justify;
+}
+/*animação da área de experiência*/
+textarea:hover, textarea:focus{
+    background-color: #381A70;
+    color: white;
+    transition: .5s;
+}
+/*links de cadastro com outras plataformas*/
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+}
+/*animação dos links de cadastro*/
+a:hover{
+color: white;
+transition: .5s;
+}
+/*titulo cadastro de devs*/
+.cabecalho > h1{
+    font-family: var(--fonte-titulo);
+    font-weight: 500;
+    text-align: center;
+    font-size: 3em;
+    
+}
+/*subtitulo complete suas informações*/
+.cabecalho > p{
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3em;
+}
+/*posição dos campos (input)*/
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+/*subtitulo 'de qual lado da aplicação você desenvolve'*/
+.lado > p{
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    margin: 1em auto;
+}
+/*altera a fonte dos labels (front-end, back-end e full-stack)*/
+.lado > label{
+    font-family: var(--fonte-padrao);
+    margin: 0 auto;
+}
+/*altera o campo de senioridade*/
+.senioridade{
+    font-family: var(--fonte-padrao);
+    margin: 1em 0;
+}
+/*ditância entre o subtitulo e o campo de selecione*/
+#senioridade{
+    margin-left: 12px;
+}
+/*subtitulo de tecnologias*/
+.tecnologia > p{
+    font-family: var(--fonte-padrao);
+    margin: 0 auto;
+}
+/*checkbox das tecnologias*/
+.tec > input{
+    margin: 0;
+}
+/*grupos de tecnologias*/
+.tec{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+/*labals do campo de tecnologia*/
+.tec > label{
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    margin: .1em;
+}
+
+/*subtitulo sobre experiência*/
+.exp > p{
+    font-family: var(--fonte-padrao);
+    margin: .7em auto;
+}
+/*botão de concluido*/
+.botao{
+    margin: 0.7em auto 0 auto;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    width: 10em;
+    height: 3em;
+    border-radius: 50px;
+    color: black;
+    border:1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*animação do botão de concluir*/
+.botao:hover{
+    background-color: #381A70;
+    color: white;
+    transition: .5s;
+}
+/*paragrafo para se cadastrar em outras redes*/
+.redes > p{
+    font-family: var(--fonte-padrao);
+    margin: 1em auto -0.7em 0;
+}
+/*alinhamento dos links de cadastrar com outra redes*/
+.sociais{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+/*botão facebook*/
+#facebook{
+    border: 1px solid black;
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: #1873EB;
+}
+/*animação do botão do facebook*/
+#facebook:hover{
+    background-color: #1873EB;
+    color: white;
+    transition: .7s;
+}
+/*botão do linkedin*/
+#linkedin{
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px ;
+    border-radius: 20px;
+    background-color: white;
+    color: #0A63BC;
+}
+/*animação do botão do linkedin*/
+#linkedin:hover{
+    background-color: #0A63BC;
+    color: white;
+    transition: .7s;
+}
+/*rodape*/
+footer{
+    background-color: white;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
