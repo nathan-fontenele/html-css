@@ -5,3 +5,4 @@ Esse é o meu primeiro repositório remoto feito para aula do curso de HTML e CS
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
 
+<a> href="https://nathan-gomes.github.io/HTML-CSS/exercicios/ex001/index.html">executar exercício 001. </a>
