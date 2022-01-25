@@ -6,13 +6,63 @@
     padding: 0;
 }
 
+html, body{
+    background-color: darkgrey;
+    min-height: 100vh;
+}
+
 header{
     font-family: 'Passion One';
     color: white;
     background-color: black;
+    text-align: center;
+}
+
+header > h1{
+    padding: 25px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding: 25px
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 section{
-    font-family: 'Sriracha';
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: brown;
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
