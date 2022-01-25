@@ -61,6 +61,7 @@ section.normal{
 section.imagem{
     background-color: brown;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
 }
 
 section.imagem > p{
@@ -69,10 +70,28 @@ section.imagem > p{
     padding: 5px;
 }
 
+section > p{
+    padding: 2em;
+}
+
+section#img01{
+    background-image: url(projeto-cordel/pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url(projeto-cordel/pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 footer{
     background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
+    font-size: 1em;
 }
-
