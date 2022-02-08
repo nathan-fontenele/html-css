@@ -13,7 +13,7 @@
 }
 
 html, body{
-    background-color: darkgrey;
+    background-color: purple;
     min-height: 100vh;
     font-family: var(--fonte1);
 }
@@ -75,14 +75,14 @@ section > p{
 }
 
 section#img01{
-    background-image: url(projeto-cordel/pacote-d012/imagens/background001.jpg);
+    background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 section#img02{
-    background-image: url(projeto-cordel/pacote-d012/imagens/background002.jpg);
+    background-image: url(imagens/background002.jpg);
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
